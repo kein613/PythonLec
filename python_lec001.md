@@ -36,7 +36,91 @@ bmi(172, 75)
 3. 生産者の同化量は、生産者の純生産量に生産者の呼吸量（C）を足した値である。  
 4. 生産者の純生産量は、生産者の成長量（D）、被食量（A）、枯死量（E）を足した値である。
 
+ ### 【回答例】
+
+1-1.
+
 
 ```python
- 
+#くじが当たる確率（lottery），くじの総数（all），当たりくじの数（win），くじを引く回数（chance）とする。
+def lottery(win,all,chance):
+    return(1-((all-win)/all)**chance)
 ```
+
+
+```python
+lottery(1, 2, 1)
+```
+
+
+
+
+    0.5
+
+
+
+
+```python
+lottery(1,2,2)
+```
+
+
+
+
+    0.75
+
+
+
+
+```python
+lottery(1,2,3)
+```
+
+
+
+
+    0.875
+
+
+
+1-2.
+
+
+```python
+def salt_concentration(x,y,z):
+    return x/58.44/y/z
+```
+
+
+```python
+salt_concentration(100,0.5,10)
+```
+
+
+
+
+    0.34223134839151265
+
+
+
+1-3.
+
+
+```python
+def Eef(A,B,C,D,E):
+    return (A-B)/(D+A+E+C)*100
+```
+
+
+```python
+Eef(7.0,2.5,1.6,0.8,4.5)
+```
+
+
+
+
+    32.37410071942446
+
+
+
+受講生で相互にチェックして，間違ってないか確認してくださいな。
